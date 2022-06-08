@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title routerLink="/home">Nutrición</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let onenutricion of nutricion">
+    <ion-card-header>
+      <ion-img [src]="onenutricion.imageURL"></ion-img>
+      <ion-card-subtitle>{{onenutricion.subtitle}}</ion-card-subtitle>
+      <ion-card-title>{{onenutricion.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>{{onenutricion.description}} </ion-card-content>
+  </ion-card>
+</ion-content>
